@@ -70,7 +70,7 @@ const NavMenuStyles = styled.div`
 		.navItems {
 			--top: 1rem;
 			transition: 0.3s ease transform;
-			background-color: var(--pink);
+			background-color: var(--black);
 			padding: 2rem;
 			width: 90%;
 			max-width: 300px;

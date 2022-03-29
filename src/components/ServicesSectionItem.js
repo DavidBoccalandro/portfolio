@@ -21,10 +21,8 @@ const ItemStyles = styled.div`
 function ServicesSectionItem({ icon = <></>, description = "Description" }) {
 	return (
 		<ItemStyles>
-			<div className="servicesItem__icon">
-				{icon}
-				<Description>{description}</Description>
-			</div>
+			<div className="servicesItem__icon">{icon}</div>
+			<Description>{description}</Description>
 		</ItemStyles>
 	);
 }
