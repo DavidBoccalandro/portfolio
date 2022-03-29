@@ -28,9 +28,9 @@ function Contact() {
 		<ContactStyles>
 			<div className="container">
 				<div className="contact__wrapper">
-					<Description>Have a project in mind</Description>
+					<Description>If you are interested in my profile</Description>
 					<h3 className="contact__heading">Let me help you</h3>
-					<Button btnText="Contact Now" btnLink="/contact"></Button>
+					<Button btnText="Contact Me!" btnLink="/contact"></Button>
 				</div>
 			</div>
 		</ContactStyles>
