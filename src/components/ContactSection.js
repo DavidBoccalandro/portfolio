@@ -46,10 +46,26 @@ function ContactSection() {
 				<SectionTitle heading="Contact" subheading="Get in touch" />
 				<div className="contactSection__wrapper">
 					<div className="left">
-						<ContactInfoItem icon={<BiMailSend />} text="E-mail" />
-						<ContactInfoItem icon={<BsLinkedin />} text="LinkedIn" />
-						<ContactInfoItem icon={<BsGithub />} text="GitHub" />
-						<ContactInfoItem icon={<BsWhatsapp />} text="WhatsApp" />
+						<ContactInfoItem
+							icon={<BiMailSend />}
+							text="E-mail"
+							link="mailto:davidboccalandro&commat;hotmail&period;com"
+						/>
+						<ContactInfoItem
+							icon={<BsLinkedin />}
+							text="LinkedIn"
+							link="https://www.linkedin.com/in/david-boccalandro-developer/"
+						/>
+						<ContactInfoItem
+							icon={<BsGithub />}
+							text="GitHub"
+							link="https://github.com/DavidBoccalandro"
+						/>
+						<ContactInfoItem
+							icon={<BsWhatsapp />}
+							text="WhatsApp"
+							link="https://wa.me/+5491130775454"
+						/>
 					</div>
 					<div className="right">
 						<ContactForm />

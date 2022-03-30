@@ -3,7 +3,7 @@ import { MdPlace } from "react-icons/md";
 import styled from "styled-components";
 import Description from "./Description";
 
-const ContactInfoItemStyle = styled.div`
+const ContactInfoItemStyle = styled.a`
 	padding: 1.84rem;
 	background-color: var(--black);
 	display: flex;
@@ -39,9 +39,10 @@ const ContactInfoItemStyle = styled.div`
 function ContactInfoItem({
 	icon = <MdPlace></MdPlace>,
 	text = "This is an info",
+	link,
 }) {
 	return (
-		<ContactInfoItemStyle>
+		<ContactInfoItemStyle href={link} target="_blank" rel="noreferrer">
 			<div className="icon">{icon}</div>
 			<div className="info">
 				<Description>{text}</Description>
