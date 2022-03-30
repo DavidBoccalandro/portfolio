@@ -60,7 +60,8 @@ function Footer() {
 				<div className="footer__col1">
 					<h1 className="footer__col1__title">David Boccalandro</h1>
 					<Description>
-						🐱‍👤 Fun fact: My cat's name is Oreo because I'm a fan of argentinian "Oreo" cookies.
+						🐱‍👤 Fun fact: My cat's name is Oreo because I'm a fan of
+						argentinian "Oreo" cookies.
 					</Description>
 				</div>
 				<div className="footer__col2">
@@ -80,7 +81,7 @@ function Footer() {
 						links={[
 							{
 								title: "Mail",
-								path: "mailto:davidboccalandro&commat;hotmail&period;com",
+								path: "mailto:davidboccalandro@hotmail.com",
 							},
 							{ title: "WhatsApp", path: "https://wa.me/+5491130775454" },
 							{

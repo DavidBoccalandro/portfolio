@@ -49,7 +49,7 @@ function ContactSection() {
 						<ContactInfoItem
 							icon={<BiMailSend />}
 							text="E-mail"
-							link="mailto:davidboccalandro&commat;hotmail&period;com"
+							link="mailto:davidboccalandro@hotmail.com"
 						/>
 						<ContactInfoItem
 							icon={<BsLinkedin />}
