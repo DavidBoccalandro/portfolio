@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 import Description from "../components/Description";
 import AboutImg from "../assets/images/DavePlatensenegra.JPG";
 import styled from "styled-components";
@@ -8,7 +7,7 @@ import Contact from "../components/Contact";
 import CV from "../assets/images/David Boccalandro.pdf";
 
 const AboutStyles = styled.div`
-	padding: 20rem 0 10rem 0;
+	padding: 20rem 0 0 0;
 
 	.top-section {
 		display: flex;

@@ -49,6 +49,10 @@ const MapStyles = styled.div`
 	@media only screen and (max-width: 568px) {
 		background-position: 23.5% center;
 		.map__card {
+			top: 18%;
+			left: 9%;
+		}
+		.map__card__heading {
 			display: none;
 		}
 	}
