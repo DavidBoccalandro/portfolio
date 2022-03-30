@@ -65,7 +65,7 @@ function ContactForm() {
 
 	return (
 		<ContactFormStyles>
-			<form action="POST" data-netlify="true">
+			<form name="contact" method="POST" data-netlify="true">
 				<div className="form-group">
 					<label htmlFor="name">
 						Your Name:
