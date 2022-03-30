@@ -44,6 +44,7 @@ const FooterStyles = styled.div`
 			max-width: 100%;
 		}
 		.copyright {
+			text-align: center;
 			.container {
 				div {
 					margin-top: 0;
