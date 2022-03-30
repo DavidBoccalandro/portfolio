@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import projectImg from "../assets/images/family.jpeg";
 
@@ -29,29 +28,71 @@ const ProjectCardStyles = styled.div`
 		font-family: "RobotoMono Regular";
 		margin-top: 1rem;
 	}
+	.projectButton {
+		display: inline-block;
+		font-size: 1.8rem;
+		text-decoration: underline;
+		margin: 2rem 0;
+		color: royalblue;
+	}
+	.links{
+		display: flex;
+		justify-content: space-between;
+	}
 
 	@media only screen and (max-width: 768px) {
-        .projectCard__img {
-            height: 350px;
-        }
+		.projectCard__img {
+			height: 350px;
+		}
 	}
 `;
 
 function ProjectCard({
-	img= projectImg,
+	img = projectImg,
 	title = "Project name",
 	description = "description",
+	link,
+	linkCode,
 }) {
 	return (
 		<ProjectCardStyles>
-			<Link to="/projects" className="projectCard__img">
+			<a
+				href={link}
+				target="_blank"
+				rel="noreferrer"
+				className="projectCard__img"
+			>
 				<img src={img} alt="project img" />
-			</Link>
+			</a>
 			<div className="projectCard__info">
-				<Link to="#">
+				<a href={link} target="_blank" rel="noreferrer">
 					<h3 className="projectCard__title">{title}</h3>
-				</Link>
+				</a>
 				<p className="projectCard__description">{description}</p>
+				<div className="links">
+					{link && (
+						<a
+							className="projectButton"
+							href={link}
+							target="_blank"
+							rel="noreferrer"
+							id={link}
+						>
+							Live Project
+						</a>
+					)}
+					{linkCode && (
+						<a
+							className="projectButton"
+							href={linkCode}
+							target="_blank"
+							rel="noreferrer"
+							id={linkCode}
+						>
+							Open Code
+						</a>
+					)}
+				</div>
 			</div>
 		</ProjectCardStyles>
 	);

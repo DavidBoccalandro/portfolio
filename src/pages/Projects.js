@@ -84,6 +84,8 @@ export default function Projects() {
 							title={item.name}
 							description={item.description}
 							img={item.img}
+							link={item.link}
+							linkCode={item.linkCode}
 						/>
 					))}
 				</div>

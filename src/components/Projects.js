@@ -44,26 +44,26 @@ const ProjectsStyle = styled.div`
 		font-size: 2rem;
 	}
 
-    @media only screen and (max-width: 768px){
-        .projects__allItems {
-            flex-direction: column;
-            max-width: 400px;
-            margin: 0 auto;
-            margin-top: 7rem;
-            gap: 5rem;
-            .projectCard_img {
-                width: 100%;
-            }
-        }
+	@media only screen and (max-width: 768px) {
+		.projects__allItems {
+			flex-direction: column;
+			max-width: 400px;
+			margin: 0 auto;
+			margin-top: 7rem;
+			gap: 5rem;
+			.projectCard_img {
+				width: 100%;
+			}
+		}
 		/* display flex temporal hasta tener más proyectos */
 		.swiper-button-prev,
 		.swiper-button-next {
 			display: flex;
 		}
-    }
+	}
 
 	/* media query, y display flex temporal hasta tener más proyectos */
-	@media only screen and (max-width: 1200px){
+	@media only screen and (max-width: 1200px) {
 		.swiper-button-prev,
 		.swiper-button-next {
 			display: flex;
@@ -96,11 +96,13 @@ function Projects() {
 						{projects.map((project) => {
 							return (
 								<SwiperSlide key={project.id}>
-									<ProjectCard 
-                                        title={project.name}
-                                        img={project.img}
-                                        description={project.description}
-                                    />
+									<ProjectCard
+										title={project.name}
+										img={project.img}
+										description={project.description}
+										link={project.link}
+										linkCode={project.linkCode}
+									/>
 								</SwiperSlide>
 							);
 						})}
