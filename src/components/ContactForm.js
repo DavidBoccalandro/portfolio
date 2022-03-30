@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const ContactFormStyles = styled.div`
+const ContactFormStyles = styled.form`
 	width: 100%;
 	.form-group {
 		width: 100%;
@@ -65,8 +65,11 @@ function ContactForm() {
 
 	return (
 		<ContactFormStyles>
-			<form name="contact" method="POST" data-netlify="true">
+			<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
 				<input type="hidden" name="form-name" value="contact" />
+				<div hidden>
+					<input name="bot-field"></input>
+				</div>
 				<div className="form-group">
 					<label htmlFor="name">
 						Your Name:
