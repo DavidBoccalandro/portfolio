@@ -22,7 +22,7 @@ const AboutItemStyles = styled.div`
 		padding: 1rem;
 		border-radius: 8px;
 	}
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 990px) {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 1rem;
@@ -32,6 +32,17 @@ const AboutItemStyles = styled.div`
 		}
 		.title {
 			font-size: 2rem;
+		}
+	}
+	@media only screen and (max-width: 550px) {
+		.items {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	@media only screen and (max-width: 470px) {
+		.items {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 `;
