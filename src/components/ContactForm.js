@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const ContactFormStyles = styled.form`
+const ContactFormStyles = styled.div`
 	width: 100%;
 	.form-group {
 		width: 100%;
@@ -64,8 +64,8 @@ function ContactForm() {
 	const [message, setMessage] = useState("");
 
 	return (
-		<div>
-			<ContactFormStyles action="POST" data-netlify="true">
+		<ContactFormStyles>
+			<form action="POST" data-netlify="true">
 				<div className="form-group">
 					<label htmlFor="name">
 						Your Name:
@@ -105,8 +105,8 @@ function ContactForm() {
 				<div className="button__center">
 					<button type="submit">Send</button>
 				</div>
-			</ContactFormStyles>
-		</div>
+			</form>
+		</ContactFormStyles>
 	);
 }
 
