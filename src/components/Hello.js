@@ -6,6 +6,7 @@ import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 import styled from "styled-components";
 
 const HelloStyles = styled.div`
+	padding: 5rem 0;
 	.hello {
 		min-height: 105vh;
 		width: 100%;

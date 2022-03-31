@@ -6,7 +6,7 @@ import AboutImg from "../assets/images/originalMeB.png";
 import styled from "styled-components";
 
 const AboutStyle = styled.div`
-	padding: 10rem 0;
+	padding: 5rem 0;
 	.container {
 		display: flex;
 		align-items: center;

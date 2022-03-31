@@ -106,6 +106,9 @@ const AboutStyles = styled.div`
 				0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 		}
 	}
+	.button-resp {
+		display: none;
+	}
 
 	@media only screen and (max-width: 768px) {
 		padding: 10rem 0;
@@ -128,12 +131,39 @@ const AboutStyles = styled.div`
 			gap: 0;
 		}
 		.button-dark {
-			font-size: 1.8rem;
-			width: 100%;
+			display: none;
 		}
 		.button-light {
+			display: none;
+		}
+		.button-resp {
 			font-size: 1.8rem;
+			padding-bottom: 3rem;
 			width: 100%;
+			display: flex;
+			cursor: pointer;
+			margin-top: 2rem;
+			.button-resp {
+				background: linear-gradient(
+					rgba(0, 0, 0, 0.486),
+					rgba(59, 16, 54, 0.75)
+				);
+				box-shadow: rgb(17, 10, 9);
+				font-size: 2.2rem;
+				background-color: transparent;
+				padding: 0.7em 2em;
+				border-radius: 8px;
+				display: inline-block;
+				border: 2px solid var(--gray-1);
+				color: var(--gray-1);
+			}
+			.button-resp:hover {
+				background-color: #000000;
+				color: white;
+				box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+					-0.125rem -0.125rem 10rem rgba(239, 71, 101, 0.5),
+					0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+			}
 		}
 	}
 `;
@@ -185,6 +215,16 @@ function About() {
 							>
 								<button className="button-light" type="submit">
 									Download CV
+								</button>
+							</a>
+							<a
+								href={CV}
+								target="_blank"
+								rel="noreferrer"
+								className="button-resp"
+							>
+								<button className="button-resp" type="submit">
+									Get CV
 								</button>
 							</a>
 						</div>
@@ -259,22 +299,32 @@ function About() {
 						<h1 className="about__info__heading">Experience</h1>
 						<AboutInfoItem
 							title="Back End Tutor"
-							items={["Coderhouse || March 2022 - to date"]}
+							items={["Coderhouse || Mar 2022 - to date"]}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Full Stack Teaching Assistant"
-							items={["Bootcamp Soy Henry || December 2021 - to date"]}
+							items={["Bootcamp Soy Henry || Dec 2021 - to date"]}
+						></AboutInfoItem>
+						<AboutInfoItem
+							title="Full Stack Dev [Academic]"
+							items={["FoodApp - Individual Project || Jan 2022 - Feb 2022"]}
+						></AboutInfoItem>
+						<AboutInfoItem
+							title="Full Stack Dev [Academic]"
+							items={[
+								"JSeekers - Grupal Project - Scrum || Feb 2022 - Mar 2022",
+							]}
 						></AboutInfoItem>
 					</div>
 					<div className="about__info__item">
 						<h1 className="about__info__heading">Background Experience</h1>
 						<AboutInfoItem
 							title="BackOffice Analyst Sr."
-							items={["Martinez de Alzaga || August 2015 - September 2021"]}
+							items={["Martinez de Alzaga || Aug 2015 - Sep 2021"]}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Call Center Supervisor"
-							items={["Martinez de Alzaga || May 2015 - July 2015"]}
+							items={["Martinez de Alzaga || May 2015 - Jul 2015"]}
 						></AboutInfoItem>
 					</div>
 				</div>
