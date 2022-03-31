@@ -61,8 +61,7 @@ function Footer() {
 				<div className="footer__col1">
 					<h1 className="footer__col1__title">David Boccalandro</h1>
 					<Description>
-						🐱‍👤 Fun fact: My cat's name is Oreo because I'm a fan of
-						argentinian "Oreo" cookies.
+						🐱‍👤 Fun fact: My cat's name is Oreo because I'm a fan of "Oreo" cookies.
 					</Description>
 				</div>
 				<div className="footer__col2">
