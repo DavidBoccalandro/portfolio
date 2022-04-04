@@ -2,8 +2,16 @@ import { v4 as uuidv4 } from "uuid";
 import PiFood from "../images/PiFood.JPG";
 import JSeekers from "../images/JSeekers.JPG";
 import PortfolioPhoto from "../images/PortfolioPhoto.JPG";
+import RexChrome from "../images/rex.JPG"
 
 const projects = [
+	{
+		id: uuidv4(),
+		name: "My Portfolio",
+		description:
+			"My first project after graduating. Using this app you can check my skills. I developed with React.",
+		img: PortfolioPhoto,
+	},
 	{
 		id: uuidv4(),
 		name: "FoodApp",
@@ -24,10 +32,12 @@ const projects = [
 	},
 	{
 		id: uuidv4(),
-		name: "My Portfolio",
+		name: "Rex Chrome",
 		description:
-			"My first project after graduating. Using this app you can check my skills. I developed with React.",
-		img: PortfolioPhoto,
+			"Rex Chrome mini-project, the dinosaur that appears when you run out of internet. 100% with JavaScript.",
+		img: RexChrome,
+		link: "https://rex-chrome.netlify.app/",
+		linkCode: "https://github.com/DavidBoccalandro/Rex-Chrome",
 	},
 ];
 
