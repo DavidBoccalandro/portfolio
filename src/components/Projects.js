@@ -22,8 +22,6 @@ const ProjectsStyle = styled.div`
 	}
 	.swiper-button-prev,
 	.swiper-button-next {
-		/* display none temporal hasta tener más proyectos */
-		display: none;
 		position: absolute;
 		height: 50px;
 		width: 50px;
@@ -54,19 +52,6 @@ const ProjectsStyle = styled.div`
 			.projectCard_img {
 				width: 100%;
 			}
-		}
-		/* display flex temporal hasta tener más proyectos */
-		.swiper-button-prev,
-		.swiper-button-next {
-			display: flex;
-		}
-	}
-
-	/* media query, y display flex temporal hasta tener más proyectos */
-	@media only screen and (max-width: 1200px) {
-		.swiper-button-prev,
-		.swiper-button-next {
-			display: flex;
 		}
 	}
 `;
