@@ -1,11 +1,11 @@
 import React from "react";
 import {
-	DiMongodb,
 	DiNodejsSmall,
 	DiPostgresql,
-	DiReact,
 } from "react-icons/di";
 import {
+	SiReact,
+	SiAngular,
 	SiExpress,
 	SiJavascript,
 	SiRedux,
@@ -53,7 +53,8 @@ function Services() {
 						icon={<SiTypescript />}
 						description="TypeScript"
 					/>
-					<ServicesSectionItem icon={<DiReact />} description="React" />
+					<ServicesSectionItem icon={<SiAngular />} description="Angular" />
+					<ServicesSectionItem icon={<SiReact />} description="React" />
 					<ServicesSectionItem icon={<SiRedux />} description="Redux" />
 					<ServicesSectionItem icon={<ImGit />} description="Git" />
 					<ServicesSectionItem icon={<DiNodejsSmall />} description="Node.js" />
@@ -63,7 +64,6 @@ function Services() {
 						description="PostgreSQL"
 					/>
 					<ServicesSectionItem icon={<SiSequelize />} description="Sequelize" />
-					<ServicesSectionItem icon={<DiMongodb />} description="MongoDB" />
 				</div>
 			</div>
 		</ServicesItemStyles>
