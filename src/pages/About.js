@@ -214,7 +214,7 @@ function About() {
 						<h1 className="about__info__heading">Education</h1>
 						<AboutInfoItem
 							title="Full Stack Web Developer"
-							items={['Henry Bootcamp || October 2021 - March 2022']}
+							items={['Henry Bootcamp || Oct 2021 - Mar 2022']}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Programming"
@@ -247,10 +247,24 @@ function About() {
 						></AboutInfoItem>
 						<AboutInfoItem title="Back End" items={['Node.js', 'Express']}></AboutInfoItem>
 						<AboutInfoItem title="Database" items={['SQL', 'PostgreSQL', 'Sequelize', 'MongoDB']}></AboutInfoItem>
-						<AboutInfoItem title="Unit Testing" items={['Jest', 'React Testing Library', 'Jasmine', 'Karma']}></AboutInfoItem>
+						<AboutInfoItem
+							title="Unit Testing"
+							items={['Jest', 'React Testing Library', 'Jasmine', 'Karma']}
+						></AboutInfoItem>
 						<AboutInfoItem
 							title="Aditional Tools and Tech"
-							items={['Git', 'Socket.io', 'Storybook', 'Multer', 'Jira', 'Trello', 'Github', 'Gitlab', 'BitBucket', 'Others..']}
+							items={[
+								'Git',
+								'Socket.io',
+								'Storybook',
+								'Multer',
+								'Jira',
+								'Trello',
+								'Github',
+								'Gitlab',
+								'BitBucket',
+								'Others..',
+							]}
 						></AboutInfoItem>
 						<AboutInfoItem title="Expertise" items={['React', 'Angular']}></AboutInfoItem>
 					</div>
@@ -268,18 +282,22 @@ function About() {
 					</div>
 					<div className="about__info__item">
 						<h1 className="about__info__heading">Experience</h1>
+						<AboutInfoItem
+							title="Front End Developer - Angular & React"
+							items={['Applaudo || Apr 2022 - to date']}
+						></AboutInfoItem>
+						<AboutInfoItem
+							title="Full Stack Mentor"
+							items={['Bootcamp Soy Henry || Jan 2023 - to date']}
+						></AboutInfoItem>
 						<AboutInfoItem title="Back End Tutor" items={['Coderhouse || Mar 2022 - to date']}></AboutInfoItem>
 						<AboutInfoItem
 							title="Full Stack Teaching Assistant"
-							items={['Bootcamp Soy Henry || Dec 2021 - to date']}
+							items={['Bootcamp Soy Henry || Apr 2022 - Jul 2022']}
 						></AboutInfoItem>
 						<AboutInfoItem
-							title="Full Stack Dev [Academic]"
-							items={['FoodApp - Individual Project || Jan 2022 - Feb 2022']}
-						></AboutInfoItem>
-						<AboutInfoItem
-							title="Full Stack Dev [Academic]"
-							items={['JSeekers - Grupal Project - Scrum || Feb 2022 - Mar 2022']}
+							title="Full Stack Teaching Assistant for Reviews"
+							items={['Bootcamp Soy Henry || Jan 2022 - Mar 2022']}
 						></AboutInfoItem>
 					</div>
 					<div className="about__info__item">
