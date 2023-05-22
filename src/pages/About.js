@@ -1,10 +1,10 @@
-import React from "react";
-import Description from "../components/Description";
-import AboutImg from "../assets/images/DavePlatensenegra.JPG";
-import styled from "styled-components";
-import AboutInfoItem from "../components/AboutInfoItem";
-import Contact from "../components/Contact";
-import CV from "../assets/images/David Boccalandro.pdf";
+import React from 'react';
+import Description from '../components/Description';
+import AboutImg from '../assets/images/DavePlatensenegra.JPG';
+import styled from 'styled-components';
+import AboutInfoItem from '../components/AboutInfoItem';
+import Contact from '../components/Contact';
+import CV from '../assets/images/David Boccalandro.pdf';
 
 const AboutStyles = styled.div`
 	padding: 20rem 0 0 0;
@@ -67,19 +67,17 @@ const AboutStyles = styled.div`
 			background: linear-gradient(rgba(0, 0, 0, 0.486), rgba(59, 16, 54, 0.75));
 			box-shadow: rgb(17, 10, 9);
 			font-size: 2.2rem;
-			background-color: ${(props) =>
-				props.outline ? "transparent" : "var(--pink)"};
+			background-color: ${(props) => (props.outline ? 'transparent' : 'var(--pink)')};
 			padding: 0.7em 2em;
 			border-radius: 8px;
 			display: inline-block;
 			border: 2px solid var(--gray-1);
-			color: ${(props) => (props.outline ? "var(--gray-1)" : "white")};
+			color: ${(props) => (props.outline ? 'var(--gray-1)' : 'white')};
 		}
 		.button-dark:hover {
 			background-color: #000000;
 			color: white;
-			box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
-				-0.125rem -0.125rem 10rem rgba(239, 71, 101, 0.5),
+			box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 10rem rgba(239, 71, 101, 0.5),
 				0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 		}
 	}
@@ -101,8 +99,7 @@ const AboutStyles = styled.div`
 		.button-light:hover {
 			background-color: #000000;
 			color: white;
-			box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
-				-0.125rem -0.125rem 10rem rgba(239, 71, 101, 0.5),
+			box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 10rem rgba(239, 71, 101, 0.5),
 				0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 		}
 	}
@@ -144,10 +141,7 @@ const AboutStyles = styled.div`
 			cursor: pointer;
 			margin-top: 2rem;
 			.button-resp {
-				background: linear-gradient(
-					rgba(0, 0, 0, 0.486),
-					rgba(59, 16, 54, 0.75)
-				);
+				background: linear-gradient(rgba(0, 0, 0, 0.486), rgba(59, 16, 54, 0.75));
 				box-shadow: rgb(17, 10, 9);
 				font-size: 2.2rem;
 				background-color: transparent;
@@ -160,8 +154,7 @@ const AboutStyles = styled.div`
 			.button-resp:hover {
 				background-color: #000000;
 				color: white;
-				box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
-					-0.125rem -0.125rem 10rem rgba(239, 71, 101, 0.5),
+				box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 10rem rgba(239, 71, 101, 0.5),
 					0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 			}
 		}
@@ -180,48 +173,32 @@ function About() {
 						<h2 className="about__heading">FrontEnd - FullStack Web Developer</h2>
 						<div className="about__info">
 							<Description>
-								Ever since I was a child, I believed that programming was the profession of the future. 
-								However, when I finished high school, 
-								I couldn't pursue programming due to the lack of access to a computer.
+								Ever since I was a child, I believed that programming was the profession of the future. However, when I
+								finished high school, I couldn't pursue programming due to the lack of access to a computer.
 								<br />
 								<br />
-								Instead, I gained experience in administration, a background that still informs my work today. 
-								When I reconnected with programming, I discovered that I have a natural aptitude for learning quickly, 
-								being organized, and communicating effectively. 
-								These skills have greatly contributed to my growth as a programmer.
+								Instead, I gained experience in administration, a background that still informs my work today. When I
+								reconnected with programming, I discovered that I have a natural aptitude for learning quickly, being
+								organized, and communicating effectively. These skills have greatly contributed to my growth as a
+								programmer.
 								<br />
 								<br />
-								My vision is to continuously embrace challenges beyond my comfort zone, 
-								while my mission is to never give up and consistently strive for personal growth 
-								through continuous learning.
+								My vision is to continuously embrace challenges beyond my comfort zone, while my mission is to never
+								give up and consistently strive for personal growth through continuous learning.
 							</Description>
 						</div>
 						<div className="aboutSection__buttons">
-							<a
-								href={CV}
-								target="_blank"
-								rel="noreferrer"
-								className="button-dark"
-							>
+							<a href={CV} target="_blank" rel="noreferrer" className="button-dark">
 								<button className="button-dark" type="button">
 									Open CV
 								</button>
 							</a>
-							<a
-								href={CV}
-								download="David Boccalandro"
-								className="button-light"
-							>
+							<a href={CV} download="David Boccalandro" className="button-light">
 								<button className="button-light" type="button">
 									Download CV
 								</button>
 							</a>
-							<a
-								href={CV}
-								target="_blank"
-								rel="noreferrer"
-								className="button-resp"
-							>
+							<a href={CV} target="_blank" rel="noreferrer" className="button-resp">
 								<button className="button-resp" type="button">
 									Get CV
 								</button>
@@ -237,93 +214,82 @@ function About() {
 						<h1 className="about__info__heading">Education</h1>
 						<AboutInfoItem
 							title="Full Stack Web Developer"
-							items={["Henry Bootcamp || October 2021 - March 2022"]}
+							items={['Henry Bootcamp || October 2021 - March 2022']}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Programming"
-							items={["Universidad Tecnológica Nacional || 2011 - 2012"]}
+							items={['Universidad Tecnológica Nacional || 2011 - 2012']}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Business Administration"
-							items={["Universidad de Buenos Aires || 2020 - 2022"]}
+							items={['Universidad de Buenos Aires || 2020 - 2022']}
 						></AboutInfoItem>
 					</div>
 					<div className="about__info__item">
 						<h1 className="about__info__heading">Hard Skills</h1>
-						<AboutInfoItem
-							title="Languages"
-							items={["JavaScript", "TypeScript"]}
-						></AboutInfoItem>
+						<AboutInfoItem title="Languages" items={['JavaScript', 'TypeScript']}></AboutInfoItem>
 						<AboutInfoItem
 							title="Front End"
-							items={["HTML", "CSS", "React", "Redux"]}
+							items={[
+								'HTML',
+								'CSS',
+								'Sass',
+								'React',
+								'Redux',
+								'Angular',
+								'NgRx',
+								'RxJS',
+								'Tailwind',
+								'Bootstrap',
+								'Angular Material',
+								'Ant Design',
+							]}
 						></AboutInfoItem>
-						<AboutInfoItem
-							title="Back End"
-							items={["Node.js", "Express"]}
-						></AboutInfoItem>
-						<AboutInfoItem
-							title="Database"
-							items={["SQL", "PostgreSQL", "Sequelize"]}
-						></AboutInfoItem>
+						<AboutInfoItem title="Back End" items={['Node.js', 'Express']}></AboutInfoItem>
+						<AboutInfoItem title="Database" items={['SQL', 'PostgreSQL', 'Sequelize', 'MongoDB']}></AboutInfoItem>
 						<AboutInfoItem
 							title="Aditional Tools and Tech"
-							items={["Git", "Github", "Socket.io", "Multer", "Others.."]}
+							items={['Git', 'Socket.io', 'Multer', 'Jira', 'Trello', 'Github', 'Gitlab', 'BitBucket', 'Others..']}
 						></AboutInfoItem>
-						<AboutInfoItem
-							title="Learning"
-							items={["MongoDB", "Angular"]}
-						></AboutInfoItem>
+						<AboutInfoItem title="Expertise" items={['React', 'Angular']}></AboutInfoItem>
 					</div>
 					<div className="about__info__item">
 						<h1 className="about__info__heading">Soft Skills</h1>
 						<AboutInfoItem
 							title="Love for challenges"
-							items={["Curiosity", "Persistent", "Passion to learn"]}
+							items={['Curiosity', 'Persistent', 'Passion to learn']}
 						></AboutInfoItem>
-						<AboutInfoItem
-							title="Team Player"
-							items={["Assertive communication", "Collaborative"]}
-						></AboutInfoItem>
+						<AboutInfoItem title="Team Player" items={['Assertive communication', 'Collaborative']}></AboutInfoItem>
 						<AboutInfoItem
 							title="Adaptation to change"
-							items={[
-								"Flexibility",
-								"Problem resolution",
-								"Analytical capacity",
-							]}
+							items={['Flexibility', 'Problem resolution', 'Analytical capacity']}
 						></AboutInfoItem>
 					</div>
 					<div className="about__info__item">
 						<h1 className="about__info__heading">Experience</h1>
-						<AboutInfoItem
-							title="Back End Tutor"
-							items={["Coderhouse || Mar 2022 - to date"]}
-						></AboutInfoItem>
+						<AboutInfoItem title="Back End Tutor" items={['Coderhouse || Mar 2022 - to date']}></AboutInfoItem>
 						<AboutInfoItem
 							title="Full Stack Teaching Assistant"
-							items={["Bootcamp Soy Henry || Dec 2021 - to date"]}
+							items={['Bootcamp Soy Henry || Dec 2021 - to date']}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Full Stack Dev [Academic]"
-							items={["FoodApp - Individual Project || Jan 2022 - Feb 2022"]}
+							items={['FoodApp - Individual Project || Jan 2022 - Feb 2022']}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Full Stack Dev [Academic]"
-							items={[
-								"JSeekers - Grupal Project - Scrum || Feb 2022 - Mar 2022",
-							]}
+							items={['JSeekers - Grupal Project - Scrum || Feb 2022 - Mar 2022']}
 						></AboutInfoItem>
 					</div>
 					<div className="about__info__item">
 						<h1 className="about__info__heading">Background Experience</h1>
 						<AboutInfoItem
 							title="BackOffice Analyst Sr."
-							items={["Martinez de Alzaga || Aug 2015 - Sep 2021"]}
+							items={['Martinez de Alzaga || Aug 2015 - Sep 2021']}
 						></AboutInfoItem>
 						<AboutInfoItem
 							title="Call Center Supervisor"
-							items={["Martinez de Alzaga || May 2015 - Jul 2015"]}
+							items={['Martinez de Alzaga || May 2015 - Jul 2015']}
 						></AboutInfoItem>
 					</div>
 				</div>
