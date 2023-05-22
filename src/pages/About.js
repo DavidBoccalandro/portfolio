@@ -203,7 +203,7 @@ function About() {
 								rel="noreferrer"
 								className="button-dark"
 							>
-								<button className="button-dark" type="submit">
+								<button className="button-dark" type="button">
 									Open CV
 								</button>
 							</a>
@@ -212,7 +212,7 @@ function About() {
 								download="David Boccalandro"
 								className="button-light"
 							>
-								<button className="button-light" type="submit">
+								<button className="button-light" type="button">
 									Download CV
 								</button>
 							</a>
@@ -222,7 +222,7 @@ function About() {
 								rel="noreferrer"
 								className="button-resp"
 							>
-								<button className="button-resp" type="submit">
+								<button className="button-resp" type="button">
 									Get CV
 								</button>
 							</a>
