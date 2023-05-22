@@ -247,9 +247,10 @@ function About() {
 						></AboutInfoItem>
 						<AboutInfoItem title="Back End" items={['Node.js', 'Express']}></AboutInfoItem>
 						<AboutInfoItem title="Database" items={['SQL', 'PostgreSQL', 'Sequelize', 'MongoDB']}></AboutInfoItem>
+						<AboutInfoItem title="Unit Testing" items={['Jest', 'React Testing Library', 'Jasmine', 'Karma']}></AboutInfoItem>
 						<AboutInfoItem
 							title="Aditional Tools and Tech"
-							items={['Git', 'Socket.io', 'Multer', 'Jira', 'Trello', 'Github', 'Gitlab', 'BitBucket', 'Others..']}
+							items={['Git', 'Socket.io', 'Storybook', 'Multer', 'Jira', 'Trello', 'Github', 'Gitlab', 'BitBucket', 'Others..']}
 						></AboutInfoItem>
 						<AboutInfoItem title="Expertise" items={['React', 'Angular']}></AboutInfoItem>
 					</div>
@@ -257,12 +258,12 @@ function About() {
 						<h1 className="about__info__heading">Soft Skills</h1>
 						<AboutInfoItem
 							title="Love for challenges"
-							items={['Curiosity', 'Persistent', 'Passion to learn']}
+							items={['Curiosity', 'Persistent', 'Passion for Learning']}
 						></AboutInfoItem>
 						<AboutInfoItem title="Team Player" items={['Assertive communication', 'Collaborative']}></AboutInfoItem>
 						<AboutInfoItem
 							title="Adaptation to change"
-							items={['Flexibility', 'Problem resolution', 'Analytical capacity']}
+							items={['Flexibility', 'Problem-solving', 'Analytical Thinking']}
 						></AboutInfoItem>
 					</div>
 					<div className="about__info__item">
