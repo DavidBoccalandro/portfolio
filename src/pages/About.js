@@ -175,26 +175,25 @@ function About() {
 				<div className="top-section">
 					<div className="left">
 						<p className="about__subheading">
-							Hi, I am <span>David</span>
+							I am <span>David</span>
 						</p>
-						<h2 className="about__heading">A FullStack Web Developer</h2>
+						<h2 className="about__heading">FrontEnd - FullStack Web Developer</h2>
 						<div className="about__info">
 							<Description>
-								Since I was a child, I thought that programming was the job of
-								the future. When I left high school I was going to dedicate
-								myself to programming and I left it because I didn't have a
-								computer.
+								Ever since I was a child, I believed that programming was the profession of the future. 
+								However, when I finished high school, 
+								I couldn't pursue programming due to the lack of access to a computer.
 								<br />
 								<br />
-								I have experience in administration, a background that currently
-								guides me: when I reconnected with programming I noticed that I
-								find it easy to learn quickly, be organized, communicate. Skills
-								that have helped me become a good programmer.
+								Instead, I gained experience in administration, a background that still informs my work today. 
+								When I reconnected with programming, I discovered that I have a natural aptitude for learning quickly, 
+								being organized, and communicating effectively. 
+								These skills have greatly contributed to my growth as a programmer.
 								<br />
 								<br />
-								My vision is always to accept challenges outside my comfort zone
-								and my mission is to never give up but always grow without
-								stopping learning.
+								My vision is to continuously embrace challenges beyond my comfort zone, 
+								while my mission is to never give up and consistently strive for personal growth 
+								through continuous learning.
 							</Description>
 						</div>
 						<div className="aboutSection__buttons">
