@@ -107,7 +107,7 @@ function Footer() {
 			<div className="copyright">
 				<div className="container">
 					<Description>
-						© 2022 - Designed By David Boccalandro 🔥 FullStack Developer
+						© 2021 - Designed By David Boccalandro 🔥 FontEnd - FullStack Developer
 					</Description>
 				</div>
 			</div>
