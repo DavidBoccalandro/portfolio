@@ -15,6 +15,7 @@ import {
 	SiJest,
 	SiTestinglibrary,
 	SiJasmine,
+	SiStorybook,
 } from 'react-icons/si';
 import { ImGit } from 'react-icons/im';
 import styled from 'styled-components';
@@ -58,7 +59,11 @@ function Services() {
 					<ServicesSectionItem icon={<SiHtml5 />} description="HTML" />
 					<ServicesSectionItem icon={<SiCss3 />} description="CSS" />
 					<ServicesSectionItem icon={<DiSass />} description="Sass" />
-					<ServicesSectionItem icon={<img src={angularMaterial} alt="Angular Material icon" />} description="Angular Material" />
+					<ServicesSectionItem icon={<SiStorybook />} description="Storybook" />
+					<ServicesSectionItem
+						icon={<img src={angularMaterial} alt="Angular Material icon" />}
+						description="Angular Material"
+					/>
 					<ServicesSectionItem icon={<SiBootstrap />} description="Bootstrap" />
 					<ServicesSectionItem icon={<SiJest />} description="Jest" />
 					<ServicesSectionItem icon={<SiTestinglibrary />} description="React Testing Library" />
