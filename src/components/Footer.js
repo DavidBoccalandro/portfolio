@@ -30,6 +30,9 @@ const FooterStyles = styled.div`
 		.para {
 			margin-left: 0;
 		}
+		.container > .paragraph {
+			max-width: none;
+		}
 	}
 
 	@media only screen and (max-width: 768px) {
@@ -105,9 +108,9 @@ function Footer() {
 				</div>
 			</div>
 			<div className="copyright">
-				<div className="container">
+				<div className="container" id="designed__by">
 					<Description>
-						© 2021 - Designed By David Boccalandro 🔥 FontEnd - FullStack Developer
+						© 2021 - Designed By David Boccalandro 🔥 FrontEnd - FullStack Developer
 					</Description>
 				</div>
 			</div>

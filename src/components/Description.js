@@ -8,7 +8,7 @@ const DescriptionStyle = styled.div`
 	line-height: 1.3em;
     text-shadow: black 2px 2px;
 
-	@media only screen and (max-width 768px) {
+	@media only screen and (max-width: 768px) {
 		font-size: 1.4rem;
 	}
 `;
